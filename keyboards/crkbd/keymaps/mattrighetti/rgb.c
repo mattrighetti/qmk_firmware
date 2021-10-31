@@ -68,12 +68,12 @@ void rgb_by_layer(int layer) {
             rgblight_sethsv_noeeprom(9, 255, 255);
             break;
         case _RAISE:
-            rgblight_sethsv_noeeprom(HSV_CYAN);
+            rgblight_sethsv_noeeprom(HSV_RED);
             break;
         case _LOWER:
-            rgblight_sethsv_noeeprom(HSV_MAGENTA);
+            rgblight_sethsv_noeeprom(HSV_BLUE);
             break;
-        default:
-            rgblight_sethsv_noeeprom(HSV_RED);
+        case _QWERTY:
+            rgblight_sethsv_noeeprom(HSV_YELLOW);
     }
 }
