@@ -65,15 +65,16 @@ void rgb_by_layer(int layer) {
 
     switch (layer) {
         case _ADJUST:
-            rgblight_sethsv_noeeprom(9, 255, 255);
+            rgblight_sethsv_noeeprom(HSV_WHITE);
             break;
         case _RAISE:
-            rgblight_sethsv_noeeprom(HSV_RED);
+            rgblight_sethsv_noeeprom(HSV_GOLD);
             break;
         case _LOWER:
             rgblight_sethsv_noeeprom(HSV_BLUE);
             break;
         case _QWERTY:
             rgblight_sethsv_noeeprom(HSV_YELLOW);
+            break;
     }
 }
